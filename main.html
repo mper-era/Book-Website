@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Reverend Insanity</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="info">
+            <div class="container" id="upper1">
+                <img src="https://iili.io/JpgOwKJ.jpg" id="coverimg">
+            </div>
+            <div class="container" id="lower1">
+                <h1>Reverend Insanity</h1>
+                <p>With his world view, values of worth, and philosophy on life unrighteous, the demon is reborn.
+                    <br><br>An old dream in the ancient days, a new author with an identical name.
+                    <br><br>An old story about a time traveler who was constantly being reborn.
+                    <br><br>An eccentric world that grows, cultivates, and uses Gu.
+                    <br><br>And a peerless great demon that freely acts to his heart's content.</p>
+            </div>
+        </div>
+        <div id="stats">
+            <div class="container" id="upper2">
+                <h1>Overall Progress</h1>
+            </div>
+            <div class="container" id="lower2">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--
+    function getD(radius, startAngle, endAngle) {
+const isCircle = endAngle - startAngle === 360;
+if (isCircle) {
+        endAngle--;
+    }
+const start = polarToCartesian(radius, startAngle);
+    const end = polarToCartesian(radius, endAngle);
+const largeArcFlag = endAngle - startAngle <= 180 ? 0 : 1;
+    const d = [
+        "M", start.x, start.y,
+        "A", radius, radius, 0, largeArcFlag, 1, end.x, end.y];
+if (isCircle) {
+        d.push("Z");
+    } else {
+        d.push("L", radius, radius,
+            "L", start.x, start.y,
+            "Z");
+    }
+return d.join(" ");
+}
+function polarToCartesian(radius, angleInDegrees) {
+    var radians = (angleInDegrees - 90) * Math.PI / 180;
+return {
+        x: round(radius + (radius * Math.cos(radians))),
+        y: round(radius + (radius * Math.sin(radians)))
+    };
+}
+
+function pie(radius, ...vals) {
+const total = vals.reduce((a, b) => a + b, 0);
+const data = vals.map(val => ({ val, degrees: val / total * 360 }));
+data.forEach((o, i, ar) => {
+        if (!i) {
+            o.from = 0;
+            o.to = o.degrees;
+        } else {
+            o.from = ar[i - 1].to;
+            o.to = o.from + o.degrees;
+        }
+        o.path = path(getD(radius, o.from, o.to), i);
+    });
+return svg(radius * 2, data.map(o => o.path).join(''));
+}
+function svg(width, content ) {
+    return `<svg viewBox="0 0 ${width} ${width}"><g class='sectors'>${content}</g></svg>`;
+}
+function path(d, idx) {
+    return `<path d='${d}' class='type${idx}'/>`;
+}
+-->
