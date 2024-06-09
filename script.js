@@ -1,8 +1,8 @@
-window.onload = function(){
+window.onload = function() {
 
     // Changing variables
     var pg = 8016; // Current page
-    var chap = 0; // Current chapter
+    var chap = 599; // Current chapter
     var date = new Date("6/9/2024 6:19 AM UTC"); // Current time/date
 
     var pb = document.getElementById("progbar");
@@ -16,15 +16,39 @@ window.onload = function(){
     document.getElementById("curnum").innerHTML = pg.toString();
     document.getElementById("maxnum").innerHTML = maxpg.toString();
 
-    var percent = 3 + ((88 - 5) * (pg / maxpg))
-    document.getElementById("curnum").style.transform = `translate(${percent}%, -3.03488372093vw)` // -43.5px
+    var percent = 3 + ((88 - 5) * (pg / maxpg));
+    document.getElementById("curnum").style.transform = `translate(${percent}%, -3.03488372093vw)`; // -43.5px
 
-    var dp = 1000
-    percent = Math.round((pg / maxpg) * 100 * dp) / dp
+    var dp = 3
+    percent = Math.round((pg / maxpg) * 100 * (10 ** dp)) / (10 ** dp);
     document.getElementById("percent").innerHTML = percent.toString().concat("%");
 
     date = date.toString();
     document.getElementById("datetxt").innerHTML = `Last Updated on ${date.substring(4, 21)}`;
 
+    var arcs = [200, 350, 650, 1000, 1300, 1400, 1500, 1750, 2334];
+    var start = 0;
+    for (let i = 0; i < arcs.length; i++) {
+        var end = arcs[i];
+        var length = end - start;
+        var curbar = document.getElementById(`bar${i + 1}`);
+        curbar.max = length;
+
+        if (chap > start && chap <= end)
+        {
+            curbar.value = chap - start;
+        }
+        else if (chap <= start)
+        {
+            curbar.value = 0;
+        }
+        else
+        {
+            curbar.value = curbar.max;
+        }
+
+        start = end;
+    }
     
+    document.getElementById("chaptxt").innerHTML = `Current Chapter: ${chap}/${arcs[arcs.length - 1]}`;
 }
