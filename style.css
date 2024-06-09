@@ -65,26 +65,32 @@ p {
     width: 100%;
 }
 
-#upper1 {
+#image {
     width: 100%;
     height: 50%;
 }
 
-#lower1 {
+#desc {
     width: 100%;
     height: 50%;
     transform: translateY(-0.697674418605vw); /*10px*/
 }
 
-#upper2 {
+#prog {
     width: 100%;
     height: 25%;
 }
 
-#lower2 {
+#arcs {
     width: 100%;
-    height: 75%;
+    height: 50%;
     transform: translateY(-0.697674418605vw); /*10px*/
+}
+
+#chaps {
+    width: 100%;
+    height: 24%;
+    transform: translateY(-1.39534883721vw); /*20px*/
 }
 
 #progbar {
@@ -121,4 +127,16 @@ p {
 .bar::-webkit-progress-value {
     background-color: #59C9A5;
     border-radius: 5px;
+}
+
+ul {
+    color: #6FB3D3;
+    font-size: 1.25581395349vw; /*18px*/
+    margin: 0px;
+
+    column-count: 3;
+}
+
+li {
+    list-style-type: "> ";
 }
