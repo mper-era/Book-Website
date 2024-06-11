@@ -3,7 +3,7 @@ window.onload = function() {
     // Changing variables
     var pg = 8424; // Current page
     var chap = 625; // Current chapter
-    var date = new Date("6/11/2024 9:38 AM GMT +5:30"); // Current time/date
+    var date = new Date("6/11/2024 04:16 UTC"); // Current time/date
 
     var pb = document.getElementById("progbar");
 
