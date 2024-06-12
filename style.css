@@ -93,6 +93,10 @@ p {
     transform: translateY(-1.39534883721vw); /*20px*/
 }
 
+#chaptxt {
+    width: 100%;
+}
+
 #progbar {
     border-radius: 0.348837209302vw; /*5px*/
     width: 90%;
@@ -133,8 +137,9 @@ ul {
     color: #6FB3D3;
     font-size: 1.25581395349vw; /*18px*/
     margin: 0px;
-
     column-count: 3;
+    width: 100%;
+    transform: translate(-1.39534883721vw, -9.27906976744vw); /*-20px, -133px*/
 }
 
 li {
@@ -143,5 +148,14 @@ li {
 
 #arcnums {
     text-align: center;
-    transform: translate(20%, -16.0465116279vw); /*-230px*/
+    transform: translate(0.279069767442vw, -15.6976744186vw); /*4px, -225px*/
+    width: 21.976744186vw;
+    float: right;
 }
+
+.num {
+    opacity: 0.0;
+    transition: opacity 0.2s;
+}
+
+.num:hover {opacity: 1.0;}
