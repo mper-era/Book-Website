@@ -26,7 +26,7 @@ window.onload = function() {
     date = date.toString();
     document.getElementById("datetxt").innerHTML = `Last Updated on ${date.substring(4, 21)}`;
 
-    var arcs = [200, 350, 650, 1000, 1300, 1400, 1500, 1750, 2334];
+    var arcs = [200, 400, 650, 1000, 1300, 1400, 1500, 1750, 2334];
     var start = 0;
     for (let i = 0; i < arcs.length; i++) {
         var end = arcs[i];
@@ -46,6 +46,8 @@ window.onload = function() {
         {
             curbar.value = curbar.max;
         }
+
+        document.getElementById(`num${i + 1}`).innerHTML = `${start} - ${end}`;
 
         start = end;
     }
