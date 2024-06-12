@@ -18,7 +18,7 @@ h1 {
 }
 
 h3 {
-    color: #6FB3D3;
+    color: #FFFFFF;
     font-size: 1.25581395349vw; /*18px*/
     padding: 0px;
     margin: 0px;
@@ -139,4 +139,9 @@ ul {
 
 li {
     list-style-type: "> ";
+}
+
+#arcnums {
+    text-align: center;
+    transform: translate(20%, -230px);
 }
