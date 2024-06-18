@@ -1,9 +1,9 @@
 window.onload = function() {
 
     // Changing variables
-    var pg = 8908; // Current page
-    var chap = 660; // Current chapter
-    var date = new Date("6/13/2024 11:05 UTC"); // Current time/date
+    var pg = 9426; // Current page
+    var chap = 698; // Current chapter
+    var date = new Date("6/18/2024 22:18 GMT +12:00"); // Current time/date
 
     var pb = document.getElementById("progbar");
 
