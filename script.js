@@ -1,4 +1,8 @@
+import { inject } from "@vercel/analytics";
+
 window.onload = function() {
+
+    inject();
 
     // Changing variables
     var pg = 9689; // Current page
