@@ -1,0 +1,14 @@
+{
+  "name": "bookwebsite",
+  "version": "1.0.0",
+  "description": "A cool little book website that shows my progress on a certain book.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  }
+}
