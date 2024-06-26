@@ -12,28 +12,28 @@ body {
 
 h1 {
     color: #13C4A3;
-    font-size: 1.438rem; /*23px*/
+    font-size: 1.60465116279vw; /*23px*/
     padding: 0px;
     margin: 0px;
 }
 
 h3 {
     color: #FFFFFF;
-    font-size: 1.125rem; /*18px*/
+    font-size: 1.25581395349vw; /*18px*/
     padding: 0px;
     margin: 0px;
 }
 
 h4 {
     color: #6FB3D3;
-    font-size: 1.125rem; /*18px*/
+    font-size: 1.25581395349vw; /*18px*/
     padding: 0px;
     margin: 0px;
 }
 
 p {
     color: #6FB3D3;
-    font-size: 0.75rem; /*12px*/
+    font-size: 0.837209302326vw; /*12px*/
     padding: 0px;
     margin: 0px;
 }
